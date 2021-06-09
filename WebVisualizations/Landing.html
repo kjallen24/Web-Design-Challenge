@@ -7,8 +7,9 @@
 </head>
 
 <body>
+ 
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a><style>
+    <a class="navbar-brand" href="#">Latitude</a><style>
  
       /* h1 heading tag */
       body {
@@ -18,19 +19,19 @@
   font-size: 18px;
   line-height: 150%;
   color: #333;
-  background: #efeee7;
+  background: white;
 }
 .navbar {
   overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
+  background-color: palevioletred;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Links inside the navbar */
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: purple;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -38,7 +39,7 @@
 
 /* The dropdown container */
 .dropdown {
-  float: left;
+  float: right;
   overflow: hidden;
 }
 
@@ -47,8 +48,8 @@
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
-  padding: 14px 16px;
+  color: purple;
+  padding: 14px 60px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -56,7 +57,7 @@
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: white;
 }
 
 /* Dropdown content (hidden by default) */
@@ -72,7 +73,7 @@
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: black;
+  color: palevioletred;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -91,6 +92,7 @@
 header {
   background: #333;
 }
+
       h1 {
         /* Put a 15-pixel margin at the bottom of the heading. */
         margin-bottom: 15px;
@@ -126,28 +128,39 @@ header {
         /* Bold the text. */
         font-weight: bold;
       }
-    
+      .boxed {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        background: white;
+        border: 2px solid white ;
+        padding: 20px;
+        /*margin-left: auto;
+        margin-right: auto;*/
+}
     </style>
   <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
     <div class="dropdown">
-      <button class="dropbtn">Dropdown
+      <button class="dropbtn">Plots
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="#">Max Temperature</a>
+        <a href="#">Humidity</a>
+        <a href="#">Cloudiness</a>
+        <a href="#">Wind Speed</a>
       </div>
     </div>
+    <a href="#home">Comparison</a>
+    <a href="#news">Data</a>
   </div>
   </nav>
 
-  <h1>Summary: Latitude vs X.</h1>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem consequatur unde aut dolores odio hic, accusamus recusandae ipsam illum enim voluptatibus obcaecati totam tempora eum quod sapiente. Corporis, quidem, culpa?</p>
+  <div class="boxed">
+    <h1>Summary: Latitude vs X.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem consequatur unde aut dolores odio hic, accusamus recusandae ipsam illum enim voluptatibus obcaecati totam tempora eum quod sapiente. Corporis, quidem, culpa?</p>
   <img src="Resources\assets\images\Fig1.png" alt="Fig1" width="25%">
+</div>
 
 </body>
 
