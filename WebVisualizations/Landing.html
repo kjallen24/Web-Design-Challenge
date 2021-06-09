@@ -6,7 +6,7 @@
   <title>Landing Page</title>
 </head>
 
-<body>
+<body style="background-color:lightgrey;">
  
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Latitude</a><style>
@@ -16,7 +16,7 @@
   padding: 0;
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 150%;
   color: #333;
   background: white;
@@ -129,15 +129,24 @@ header {
         font-weight: bold;
       }
       .boxed {
-        position: relative;
         width: 600px;
-        height: 600px;
+        height: 500px;
         background: white;
-        border: 2px solid white ;
+        padding: 15px;
+        margin-top: 2%;
+        margin-left: 10%;
+        display: inline-block;
+      }
+      .boxed2 {
+        width: 300px;
+        height: 500px;
+        background: white;
         padding: 20px;
-        /*margin-left: auto;
-        margin-right: auto;*/
-}
+        margin-top: 5%;
+        margin-left: 5%;
+        display: inline-block;
+      }
+
     </style>
   <div class="navbar">
     <div class="dropdown">
@@ -145,21 +154,53 @@ header {
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="#">Max Temperature</a>
-        <a href="#">Humidity</a>
-        <a href="#">Cloudiness</a>
-        <a href="#">Wind Speed</a>
+        <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V1.html">Max Temperature</a>
+        <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V2.html">Humidity</a>
+        <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V3.html">Cloudiness</a>
+        <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V4.html">Wind Speed</a>
       </div>
     </div>
-    <a href="#home">Comparison</a>
-    <a href="#news">Data</a>
+    <a href="Comparisons.html">Comparison</a>
+    <a href="Data.html">Data</a>
   </div>
   </nav>
 
   <div class="boxed">
     <h1>Summary: Latitude vs X.</h1>
+    <hr> 
+    
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem consequatur unde aut dolores odio hic, accusamus recusandae ipsam illum enim voluptatibus obcaecati totam tempora eum quod sapiente. Corporis, quidem, culpa?</p>
   <img src="Resources\assets\images\Fig1.png" alt="Fig1" width="25%">
+</div>
+
+<div class="boxed2">
+  <h1>Visualizations</h1>
+  <hr> 
+
+  <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V1.html">
+    <img target="_blank" src="Resources\assets\images\Fig1.png" alt="Max Temp"
+    width="150" 
+    height="120" >
+  </a>
+
+  <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V2.html">
+    <img target="_blank" src="Resources\assets\images\Fig2.png" alt="Humidity"
+    width="150" 
+    height="120" >
+  </a>
+
+  <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V3.html">
+    <img target="_blank" src="Resources\assets\images\Fig3.png" alt="Cloudiness"
+    width="150" 
+    height="120" >
+  </a>
+
+  <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V4.html">
+  <img target="_blank" src="Resources\assets\images\Fig4.png" alt="WindSpeed"
+  width="150" 
+  height="120" >
+  </a>
+  
 </div>
 
 </body>
