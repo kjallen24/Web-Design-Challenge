@@ -4,9 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Landing Page</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body style="background-color:lightgrey;">
@@ -19,7 +16,8 @@
   padding: 0;
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 150%;
   color: #333;
   background: white;
@@ -44,6 +42,7 @@
 .dropdown {
   float: right;
   overflow: hidden;
+  font-weight: bold;
 }
 
 /* Dropdown button */
@@ -88,7 +87,7 @@
   display: block;
 }
 header {
-  background: #333;
+  /*background: #333; */
 }
       h1 {
         margin-bottom: 15px;
@@ -97,12 +96,9 @@ header {
         text-align: left;
         background-color: white;
       }
-      img {
-        margin-right: auto;
-        display: block;
-      }
+
       p {
-        text-align: center;
+        text-align: left;
         font-size: 20px;
         font-weight: bold;
       }
@@ -115,7 +111,7 @@ header {
         margin-left: 10%;
         display: inline-block;
       }
-  
+
     </style>
   <div class="navbar">
     <div class="dropdown">
@@ -134,41 +130,38 @@ header {
   </div>
   </nav>
 
-  <div class="boxed">
-    <h1>Comparisons: Latitude vs X</h1>
-    <hr> 
-    
-    <p>Click any plot to get an in-depth analysis.</p>
-    <div class="container">
+     <div class="container">
+            <br>
+           <div class="col-md-12">
+           
+            <div class="boxed">
+              <h1>Plot by Plot Comparisons: Latitude vs ...</h1>
+                  
+              <p>Click any plot to get an in-depth analysis.</p>
+              <hr>
 
-      <!-- Second Row -->
-      <div class="row">
-  
-        <!-- First of two columns -->
-        <div class="col-md-6">
-          <h1>vs. Max Temperature</h1>
-          <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V1.html">
+          <div class="row">
+          <div class="col-md-2">
+            <h1>vs. Max Temperature</h1>
+            <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V1.html">
             <img target="_blank" src="Resources\assets\images\Fig1.png" alt="Max Temp"
             width="250" 
             height="250" >
-          </a>
-        </div>
-  
-        <!-- Second of two columns -->
-        <div class="col-md-6">
-          <h1>vs. Humidity</h1>
-          <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V2.html">
+            </a>
+          </div>
+          
+          <div class="col-md-2">
+            <h1>vs. Humidity</h1>
+            <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V2.html">
             <img target="_blank" src="Resources\assets\images\Fig2.png" alt="Humidity"
             width="250" 
             height="250" >
-          </a>
-        </div>
-      </div>
+            </a>
+          </div>
+          </div>
   
-      <!--Third Row-->
       <div class="row">
-        <!--First of Two Columns-->
-        <div class="col-md-6">
+        <div class="col-md-2">
           <h1>vs. Cloudiness</h1>
           <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V3.html">
             <img target="_blank" src="Resources\assets\images\Fig3.png" alt="Cloudiness"
@@ -177,7 +170,6 @@ header {
           </a>
         </div>
   
-        <!--Second of Two Columns-->
         <div class="col-md-6">
           <h1>vs. WindSpeed</h1>
           <a href="file:///C:/Users/kiele/OneDrive/Documents/Data%20Class/MyRepositories/Web-Design-Challenge/WebVisualizations/V4.html">
@@ -186,7 +178,6 @@ header {
             height="250" >
           </a>
         </div>
-      </div>
     </div>
   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
